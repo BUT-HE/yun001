@@ -12,6 +12,7 @@ Page({
 
   onLoad: function (options) {
 
+// 对象的解构赋值
     const {
       fileID,
       cloudPath,

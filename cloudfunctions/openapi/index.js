@@ -7,6 +7,7 @@ cloud.init()
 exports.main = async (event, context) => {
   console.log(event)
   switch (event.action) {
+    // 获取订阅消息模板 ID
     case 'requestSubscribeMessage': {
       return requestSubscribeMessage(event)
     }
@@ -44,10 +45,10 @@ async function sendSubscribeMessage(event) {
     // 此处字段应修改为所申请模板所要求的字段
     data: {
       thing2: {
-        value: '咖啡',
+        value: '笨蛋儿猪，爱你哦',
       },
       time1: {
-        value: '2020-01-01 00:00',
+        value: '2020-02-26 00:00',
       },
     }
   })

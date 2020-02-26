@@ -3,6 +3,7 @@ Page({
   data: {
     templateId: '',
     subscribeMessageResult: '',
+    // 申请发送消息权限结果
     requestSubscribeMessageResult: '',
     wxacodeSrc: '',
     wxacodeResult: '',
@@ -33,6 +34,7 @@ Page({
     }
   },
 
+  // 调用小程序api请求发送订阅消息的权限
   async requestSubscribeMessage() {
     const templateId = this.data.templateId
 
